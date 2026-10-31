@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Flight Buddy</title>
+<meta name="description" content="Datenschutzerklärung der App Flight Buddy für Android und iOS: welche Daten die App verarbeitet, an welche Dienste sie übermittelt werden und welche Rechte Sie haben.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#070b14" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  :root {
+    --bg: #f6f8fb;
+    --surface: #ffffff;
+    --fg: #0f172a;
+    --fg-2: #334155;
+    --fg-3: #64748b;
+    --line: #e2e8f0;
+    --accent: #0369a1;
+    --accent-soft: #e0f2fe;
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #070b14;
+      --surface: #0e1524;
+      --fg: #e6edf7;
+      --fg-2: #c3cede;
+      --fg-3: #8d9bb1;
+      --line: #1f2a3d;
+      --accent: #5cc8fa;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 16px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg-2);
+    font: 16.5px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 780px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1, h2, h3, h4 { color: var(--fg); line-height: 1.3; }
+  h1 { font-size: clamp(26px, 5vw, 32px); margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: 21px; margin: 48px 0 12px; display: flex; gap: 10px; align-items: baseline; }
+  h2 .n { color: var(--accent); font-variant-numeric: tabular-nums; min-width: 1.6em; }
+  h3 { font-size: 17px; margin: 28px 0 10px; }
+  h4 { font-size: 16px; margin: 0; }
+  p, ul, ol { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); text-underline-offset: 2px; overflow-wrap: anywhere; }
+  strong { color: var(--fg); }
+  header { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; }
+  header img { width: 56px; height: 56px; border-radius: 13px; flex: none; }
+  .sub { margin: 2px 0 0; color: var(--fg-3); font-size: 15px; }
+  .box {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 16px 0;
+  }
+  .box > :last-child { margin-bottom: 0; }
+  .summary { border-left: 4px solid var(--accent); }
+  .summary h2 { margin-top: 0; }
+  .note { background: var(--accent-soft); border-color: transparent; }
+  .toc ol { columns: 2 240px; column-gap: 28px; margin: 0; }
+  .toc li { break-inside: avoid; }
+  .toc a { text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .controller { font-style: normal; line-height: 1.7; }
+  .svc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; margin: 10px 0; }
+  .svc .op { margin: 2px 0 10px; color: var(--fg-3); font-size: 14.5px; }
+  .svc dl { display: grid; grid-template-columns: 112px 1fr; gap: 4px 14px; margin: 0; font-size: 15px; }
+  .svc dt { color: var(--fg-3); }
+  .svc dd { margin: 0; }
+  .rights { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px 20px; padding-left: 22px; }
+  .objection { border: 2px solid var(--accent); }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--fg-3); font-size: 14px; }
+  @media (max-width: 560px) {
+    main { padding: 28px 16px 48px; }
+    .svc dl { grid-template-columns: 1fr; gap: 0; }
+    .svc dt { margin-top: 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .svc dt:first-child { margin-top: 0; }
+  }
+  @media print {
+    body { background: #fff; color: #000; font-size: 11pt; }
+    .box, .svc { break-inside: avoid; }
+    a { color: #000; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <img src="icon.png" alt="" width="56" height="56">
+  <div>
+    <h1>Datenschutzerklärung</h1>
+    <p class="sub">für die App Flight Buddy (Android und iOS) · Stand: 31. Oktober 2026</p>
+  </div>
+</header>
+
+<section class="box summary" aria-labelledby="kurz">
+  <h2 id="kurz">Das Wichtigste in Kürze</h2>
+  <ul>
+    <li>Flight Buddy braucht <strong>kein Benutzerkonto</strong>, zeigt <strong>keine Werbung</strong> und enthält <strong>keine Analyse-, Tracking- oder Absturzmelde-Werkzeuge</strong>.</li>
+    <li>Es gibt <strong>keinen Server des Entwicklers</strong>: Die App ruft die Informationen, die Sie sehen möchten, direkt von Ihrem Gerät aus bei den in <a href="#dienste">Abschnitt 6</a> genannten Diensten ab. Dabei erhält der jeweilige Dienst technisch bedingt die IP-Adresse Ihres Geräts und – wo die Funktion es erfordert – den gewählten Ort.</li>
+    <li>Ihren <strong>Gerätestandort</strong> nutzt die App nur mit Ihrer Erlaubnis und nur für Funktionen, die Sie selbst auslösen.</li>
+    <li>Einstellungen und Zwischenspeicher bleiben <strong>auf Ihrem Gerät</strong>. Der Entwickler erhält keine Daten aus Ihrer Nutzung der App – nur Google und Apple stellen ihm zusammengefasste Statistiken und, wenn Sie zustimmen, Absturzberichte bereit (<a href="#stores">Abschnitt 10</a>).</li>
+    <li>Daten werden <strong>nicht verkauft</strong> und nicht für Werbung verwendet.</li>
+  </ul>
+</section>
+
+<nav class="box toc" aria-label="Inhalt">
+  <ol>
+    <li><a href="#verantwortlicher">Verantwortlicher</a></li>
+    <li><a href="#geltungsbereich">Geltungsbereich</a></li>
+    <li><a href="#funktionsweise">So funktioniert die App</a></li>
+    <li><a href="#standort">Standort</a></li>
+    <li><a href="#berechtigungen">Weitere Berechtigungen</a></li>
+    <li><a href="#dienste">Abgerufene Dienste</a></li>
+    <li><a href="#luftfahrzeuge">Daten über Luftfahrzeuge</a></li>
+    <li><a href="#geraet">Speicherung auf Ihrem Gerät</a></li>
+    <li><a href="#teilen">Teilen, Links und Telefonnummern</a></li>
+    <li><a href="#stores">Google Play, App Store und Testphase</a></li>
+    <li><a href="#kontakt">Kontakt per E-Mail</a></li>
+    <li><a href="#webseite">Diese Webseite</a></li>
+    <li><a href="#drittlaender">Übermittlung in Drittländer</a></li>
+    <li><a href="#speicherdauer">Speicherdauer</a></li>
+    <li><a href="#sicherheit">Datensicherheit</a></li>
+    <li><a href="#rechte">Ihre Rechte</a></li>
+    <li><a href="#sonstiges">Pflicht zur Bereitstellung, Kinder</a></li>
+    <li><a href="#aenderungen">Änderungen</a></li>
+  </ol>
+</nav>
+
+<h2 id="verantwortlicher"><span class="n">1</span>Verantwortlicher</h2>
+<p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+<address class="box controller">
+  <strong>Lorenz Beaury</strong><br>
+  Deutschland<br>
+  E-Mail: <a href="mailto:gelesen_anschluss.7v&#64;icloud&#46;com">gelesen_anschluss.7v&#64;icloud&#46;com</a><br>
+  Postanschrift auf Anfrage per E-Mail
+</address>
+<p>Flight Buddy ist ein privates, nicht kommerzielles Projekt. Ein Datenschutzbeauftragter ist nicht benannt, weil dazu keine gesetzliche Pflicht besteht.</p>
+
+<h2 id="geltungsbereich"><span class="n">2</span>Geltungsbereich</h2>
+<p>Diese Datenschutzerklärung gilt für die App <strong>Flight Buddy</strong> für Android und iOS – einschließlich der Testversionen über Google Play (Test) und Apple TestFlight – sowie für diese Webseite. Sie informiert nach Art.&nbsp;13 und 14 DSGVO darüber, welche personenbezogenen Daten verarbeitet werden, wofür, auf welcher Rechtsgrundlage und an wen sie gehen.</p>
+<p>Personenbezogen sind alle Daten, die sich auf Sie beziehen lassen. Bei Flight Buddy sind das vor allem Ihr Standort, die von Ihnen gewählten Orte und die IP-Adresse Ihres Geräts.</p>
+
+<h2 id="funktionsweise"><span class="n">3</span>So funktioniert die App</h2>
+<p>Flight Buddy verarbeitet Ihre Eingaben auf Ihrem Gerät. Die App hat kein Benutzerkonto und keinen Server des Entwicklers. Damit sie Karten, Geozonen, Wetter, Ortsnamen und Luftverkehr anzeigen kann, ruft sie diese Informationen <strong>direkt bei den Anbietern</strong> in <a href="#dienste">Abschnitt 6</a> ab. Bei jedem Abruf erhält der Anbieter technisch bedingt:</p>
+<ul>
+  <li>die IP-Adresse Ihres Geräts sowie Datum und Uhrzeit,</li>
+  <li>technische Angaben zur Anfrage, z. B. die Kennung „FlightBuddy“ mit Versionsnummer bzw. die Kennung der Browser-Komponente Ihres Systems und das Betriebssystem,</li>
+  <li>den Inhalt der Anfrage – je nach Funktion den Kartenausschnitt, die Koordinaten des gewählten Orts bzw. Startpunkts, einen Umkreis, einen Suchbegriff oder die Kennung eines Luftfahrzeugs.</li>
+</ul>
+<p>Abrufe finden nur statt, wenn Sie die jeweilige Funktion nutzen: beim Anzeigen der Karte, beim Wählen eines Orts, beim Öffnen von Abschnitten, bei der Suche und solange die In-Flight-Überwachung läuft. Beim Start prüft die App außerdem ohne Ortsangaben, ob neue Geozonen- und Luftfahrtdaten vorliegen, und lädt sie gegebenenfalls herunter.</p>
+<p>Die Anbieter verarbeiten diese Daten in eigener Verantwortung, um die Anfrage zu beantworten, und nach ihren eigenen Angaben teilweise auch in Server-Protokollen (z. B. für Sicherheit und Fehlersuche). Der Entwickler hat auf diese Daten keinen Zugriff.</p>
+<p><strong>Rechtsgrundlage</strong> ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO (Bereitstellung der von Ihnen genutzten Funktionen der App) bzw., soweit kein Vertragsverhältnis besteht, Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO. Das berechtigte Interesse liegt darin, Ihnen die angeforderten Informationen anzuzeigen und Geozonen- und Luftfahrtdaten aktuell zu halten.</p>
+
+<h2 id="standort"><span class="n">4</span>Standort</h2>
+<p><strong>Wann:</strong> Die App greift auf den Standort Ihres Geräts nur zu, wenn Sie ihn im Betriebssystem freigegeben haben und eine Standortfunktion nutzen:</p>
+<ul>
+  <li>„Meinen Standort verwenden“ bzw. „Meine Position“ – Ort oder Startpunkt auf Ihre Position setzen,</li>
+  <li>den Standort-Knopf auf der Karte,</li>
+  <li>„Position laufend verfolgen (GPS)“ in der In-Flight-Überwachung – der Überwachungsbereich folgt Ihnen.</li>
+</ul>
+<p><strong>Im Hintergrund:</strong> Solange Sie die In-Flight-Überwachung gestartet haben („Überwachung starten“), läuft die App auch im Hintergrund weiter, damit Warnungen z. B. neben der App Ihrer Drohne ankommen.</p>
+<ul>
+  <li><strong>Android:</strong> als Vordergrunddienst mit einer dauerhaften Benachrichtigung. Den Standort nutzt der Dienst nur für „Position laufend verfolgen (GPS)“.</li>
+  <li><strong>iOS:</strong> mit Standort-Aktualisierungen im Hintergrund; iOS zeigt das in der Statusleiste an. Diese Aktualisierungen halten die App lediglich aktiv und werden nicht ausgewertet. Für „Position laufend verfolgen (GPS)“ nutzt die App den Standort wie oben beschrieben.</li>
+</ul>
+<p>Mit „Überwachung beenden“ endet beides.</p>
+<p><strong>Verwendung:</strong> Die Position wird auf Ihrem Gerät verarbeitet und als gewählter Ort bzw. Startpunkt gespeichert. Die Koordinaten gehen nur an die Dienste, die Informationen zu genau diesem Ort liefern (<a href="#dienste">Abschnitt 6</a>), nicht an den Entwickler.</p>
+<p><strong>Freiwillig:</strong> Statt Ihres Standorts können Sie jeden Ort auf der Karte antippen oder suchen. Ohne Standortfreigabe funktioniert die App weiterhin, nur ohne Ortung und ohne „Position laufend verfolgen“.</p>
+<p><strong>Rechtsgrundlage</strong> ist Ihre Einwilligung, die Sie mit der Standortfreigabe des Betriebssystems erteilen (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO, §&nbsp;25 Abs.&nbsp;1 TDDDG). Sie können sie jederzeit mit Wirkung für die Zukunft widerrufen – Android: <em>Einstellungen → Apps → Flight Buddy → Berechtigungen → Standort</em>; iOS: <em>Einstellungen → Datenschutz &amp; Sicherheit → Ortungsdienste → Flight Buddy</em>.</p>
+
+<h2 id="berechtigungen"><span class="n">5</span>Weitere Berechtigungen</h2>
+<ul>
+  <li><strong>Internet:</strong> Abruf der Dienste in Abschnitt 6.</li>
+  <li><strong>Benachrichtigungen</strong> (Android): Statusanzeige der laufenden In-Flight-Überwachung.</li>
+  <li><strong>Vordergrunddienst</strong> (Android) bzw. <strong>Audio im Hintergrund</strong> (iOS): Warnungen auch dann, wenn eine andere App im Vordergrund ist.</li>
+  <li><strong>Ausnahme von der Akku-Optimierung</strong> (Android, nur wenn Sie zustimmen): verhindert, dass das System die Überwachung anhält.</li>
+  <li><strong>Vibration</strong> und <strong>Bildschirm wach halten</strong>: Warnung per Vibration; das Display bleibt an (in den Einstellungen abschaltbar).</li>
+</ul>
+<p>Diese Berechtigungen dienen nur Funktionen auf Ihrem Gerät; über sie werden keine Daten übertragen. Sie lassen sich in den Systemeinstellungen jederzeit entziehen.</p>
+
+<h2 id="dienste"><span class="n">6</span>Abgerufene Dienste</h2>
+<p>Die folgenden Anbieter erhalten bei den genannten Funktionen neben den technischen Angaben aus <a href="#funktionsweise">Abschnitt 3</a> die aufgeführten Daten. Angaben zur Speicherung stammen von den Anbietern selbst (Stand Oktober 2026). Für ihre Verarbeitung sind die Anbieter selbst verantwortlich; es gelten ihre Datenschutzbestimmungen.</p>
+
+<h3>Karte</h3>
+<article class="svc">
+  <h4>OpenFreeMap</h4>
+  <p class="op">Hyperknot Software Kft., Újlengyel, Ungarn</p>
+  <dl>
+    <dt>Wann</dt><dd>Kartenstile „Dunkel“ und „Hell“ (Standard) sowie Kartenbeschriftungen aller Kartenstile</dd>
+    <dt>Übermittelt</dt><dd>angezeigter Kartenausschnitt</dd>
+    <dt>Speicherung</dt><dd>Zugriffsprotokolle ohne IP-Adresse; Fehlerprotokolle mit IP-Adresse höchstens 7 Tage, bei Sicherheitsvorfällen bis 30 Tage. Der Anbieter kann Cloudflare, Inc. (USA) als Netzwerkdienst einsetzen.</dd>
+    <dt>Datenschutz</dt><dd><a href="https://openfreemap.org/privacy/">openfreemap.org/privacy</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>Esri World Imagery</h4>
+  <p class="op">Environmental Systems Research Institute, Inc. (Esri), Redlands, USA</p>
+  <dl>
+    <dt>Wann</dt><dd>nur beim Kartenstil „Satellit“</dd>
+    <dt>Übermittelt</dt><dd>angezeigter Kartenausschnitt</dd>
+    <dt>Datenschutz</dt><dd><a href="https://www.esri.com/de-de/privacy/privacy-statements/privacy-statement">esri.com – Datenschutzbestimmung</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>OpenTopoMap</h4>
+  <p class="op">privates Projekt, Deutschland</p>
+  <dl>
+    <dt>Wann</dt><dd>nur beim Kartenstil „Topo“</dd>
+    <dt>Übermittelt</dt><dd>angezeigter Kartenausschnitt</dd>
+    <dt>Datenschutz</dt><dd>keine eigene Datenschutzerklärung veröffentlicht; Angaben zum Projekt: <a href="https://opentopomap.org/about">opentopomap.org/about</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>ICAO-Karte (open flightmaps)</h4>
+  <p class="op">ausgeliefert von der neway data AG, Schaanwald, Liechtenstein</p>
+  <dl>
+    <dt>Wann</dt><dd>nur bei eingeschalteter Ebene „ICAO-Karte“ (standardmäßig aus)</dd>
+    <dt>Übermittelt</dt><dd>angezeigter Kartenausschnitt</dd>
+    <dt>Datenschutz</dt><dd><a href="https://newaydata.com/datenschutz">newaydata.com/datenschutz</a></dd>
+  </dl>
+</article>
+
+<h3>Geozonen und Luftfahrtdaten</h3>
+<article class="svc">
+  <h4>DiPUL – Digitale Plattform Unbemannte Luftfahrt</h4>
+  <p class="op">DFS Deutsche Flugsicherung GmbH, Langen, im Auftrag des Bundesministeriums für Verkehr</p>
+  <dl>
+    <dt>Wann</dt><dd>Geozonen auf der Karte, Geozonen am gewählten Ort und im Umkreis, Antippen einer Stelle auf der Karte, Prüfung auf neue Daten beim Start</dd>
+    <dt>Übermittelt</dt><dd>angezeigter Kartenausschnitt; Koordinaten des gewählten Orts bzw. der angetippten Stelle; Umkreis</dd>
+    <dt>Datenschutz</dt><dd><a href="https://www.dipul.de/homepage/de/datenschutz/">dipul.de/homepage/de/datenschutz</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>Austro Control</h4>
+  <p class="op">Austro Control GmbH, Wien, Österreich</p>
+  <dl>
+    <dt>Wann</dt><dd>Prüfung auf neue österreichische Geozonen beim Start und gegebenenfalls deren Herunterladen</dd>
+    <dt>Übermittelt</dt><dd>keine Ortsdaten</dd>
+    <dt>Datenschutz</dt><dd><a href="https://www.austrocontrol.at/datenschutzerklaerung">austrocontrol.at/datenschutzerklaerung</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>geo.admin.ch (Drohnen-Einschränkungen des BAZL)</h4>
+  <p class="op">Bundesamt für Landestopografie swisstopo, Wabern, Schweiz</p>
+  <dl>
+    <dt>Wann</dt><dd>wenn der Kartenausschnitt die Schweiz zeigt; Prüfung auf neue Daten beim Start</dd>
+    <dt>Übermittelt</dt><dd>angezeigter Kartenausschnitt</dd>
+    <dt>Datenschutz</dt><dd><a href="https://www.swisstopo.admin.ch/de/rechtliches">swisstopo.admin.ch/de/rechtliches</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>Géoplateforme (Drohnen-Beschränkungen der DGAC)</h4>
+  <p class="op">Institut national de l’information géographique et forestière (IGN), Saint-Mandé, Frankreich</p>
+  <dl>
+    <dt>Wann</dt><dd>wenn der Kartenausschnitt Frankreich zeigt; Prüfung auf neue Daten beim Start</dd>
+    <dt>Übermittelt</dt><dd>angezeigter Kartenausschnitt</dd>
+    <dt>Datenschutz</dt><dd><a href="https://cartes.gouv.fr/donnees-personnelles">cartes.gouv.fr/donnees-personnelles</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>open flightmaps</h4>
+  <p class="op">open flightmaps association (gemeinnütziger Verein, Österreich)</p>
+  <dl>
+    <dt>Wann</dt><dd>Herunterladen neuer Luftfahrtdaten (AIRAC-Zyklus)</dd>
+    <dt>Übermittelt</dt><dd>keine Ortsdaten</dd>
+    <dt>Datenschutz</dt><dd>keine Datenschutzerklärung veröffentlicht; <a href="https://www.openflightmaps.org/">openflightmaps.org</a></dd>
+  </dl>
+</article>
+
+<h3>Wetter, Wind und Gelände</h3>
+<article class="svc">
+  <h4>Open-Meteo</h4>
+  <p class="op">OpenMeteo GmbH, Bürglen (UR), Schweiz</p>
+  <dl>
+    <dt>Wann</dt><dd>Wind und Wetter am gewählten Ort, Geländehöhe, Wind-Animation auf der Karte</dd>
+    <dt>Übermittelt</dt><dd>Koordinaten des gewählten Orts bzw. Startpunkts; für die Wind-Animation ein Raster von Punkten um den Ort</dd>
+    <dt>Speicherung</dt><dd>Server-Protokolle, die Koordinaten enthalten können, werden nach 90 Tagen gelöscht.</dd>
+    <dt>Datenschutz</dt><dd><a href="https://open-meteo.com/en/terms">open-meteo.com/en/terms</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>MET Norway</h4>
+  <p class="op">Meteorologisk institutt (Norwegisches Meteorologisches Institut), Oslo, Norwegen</p>
+  <dl>
+    <dt>Wann</dt><dd>Flugwettermeldungen (METAR/TAF)</dd>
+    <dt>Übermittelt</dt><dd>Kennungen (ICAO-Codes) der Flugplätze in der Nähe – keine Koordinaten</dd>
+    <dt>Speicherung</dt><dd>Zugriffsprotokolle mit IP-Adresse im eigenen Rechenzentrum in Oslo; IP-Adressen nach Angaben des Instituts bis zu 90 Tage</dd>
+    <dt>Datenschutz</dt><dd><a href="https://www.met.no/en/About-us/privacy">met.no – Privacy</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>Aviation Weather Center</h4>
+  <p class="op">National Weather Service der National Oceanic and Atmospheric Administration (NOAA), USA</p>
+  <dl>
+    <dt>Wann</dt><dd>Flugwettermeldungen (METAR/TAF)</dd>
+    <dt>Übermittelt</dt><dd>ICAO-Codes der Flugplätze in der Nähe – keine Koordinaten</dd>
+    <dt>Speicherung</dt><dd>Zugriffsprotokolle mit IP-Adresse, die nach Angaben der Behörde unbefristet aufbewahrt werden können</dd>
+    <dt>Datenschutz</dt><dd><a href="https://www.weather.gov/privacy">weather.gov/privacy</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>Space Weather Prediction Center</h4>
+  <p class="op">National Weather Service der NOAA, USA</p>
+  <dl>
+    <dt>Wann</dt><dd>Kp-Index (Einfluss des Weltraumwetters auf GNSS/GPS)</dd>
+    <dt>Übermittelt</dt><dd>keine Ortsdaten</dd>
+    <dt>Datenschutz</dt><dd><a href="https://www.weather.gov/privacy">weather.gov/privacy</a></dd>
+  </dl>
+</article>
+
+<h3>Ortssuche und Ortsnamen</h3>
+<article class="svc">
+  <h4>Photon</h4>
+  <p class="op">öffentlicher Suchdienst von komoot (komoot GmbH, Deutschland)</p>
+  <dl>
+    <dt>Wann</dt><dd>Suche nach Orten und Adressen</dd>
+    <dt>Übermittelt</dt><dd>Suchbegriff; ist bereits ein Ort gewählt, dessen ungefähre Position (auf etwa 100&nbsp;m gerundet), damit nahe Treffer zuerst erscheinen</dd>
+    <dt>Datenschutz</dt><dd>keine eigene Datenschutzerklärung für Photon veröffentlicht; allgemein: <a href="https://www.komoot.com/privacy">komoot.com/privacy</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>Nominatim (OpenStreetMap)</h4>
+  <p class="op">OpenStreetMap Foundation, Vereinigtes Königreich</p>
+  <dl>
+    <dt>Wann</dt><dd>Ortsname und Landkreis zum gewählten Ort; Ortssuche, falls Photon nicht erreichbar ist</dd>
+    <dt>Übermittelt</dt><dd>Koordinaten des gewählten Orts bzw. Suchbegriff</dd>
+    <dt>Datenschutz</dt><dd><a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a></dd>
+  </dl>
+</article>
+
+<h3>Luftverkehr (In-Flight)</h3>
+<article class="svc">
+  <h4>adsb.lol</h4>
+  <p class="op">Community-Projekt einer Privatperson; Server bei netcup in Deutschland, Netzwerkdienst Cloudflare, Inc. (USA)</p>
+  <dl>
+    <dt>Wann</dt><dd>während der In-Flight-Überwachung alle 4 Sekunden</dd>
+    <dt>Übermittelt</dt><dd>Startpunkt (auf etwa 10&nbsp;m genau) und Abfrage-Radius</dd>
+    <dt>Speicherung</dt><dd>Protokolle weniger als 30 Tage</dd>
+    <dt>Datenschutz</dt><dd><a href="https://www.adsb.lol/docs/privacy-license">adsb.lol/docs/privacy-license</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>adsb.fi</h4>
+  <p class="op">Community-Projekt; Betreiber und Sitz nicht veröffentlicht</p>
+  <dl>
+    <dt>Wann</dt><dd>während der In-Flight-Überwachung alle 4 Sekunden</dd>
+    <dt>Übermittelt</dt><dd>Startpunkt (auf etwa 10&nbsp;m genau) und Abfrage-Radius</dd>
+    <dt>Datenschutz</dt><dd>keine Datenschutzerklärung veröffentlicht; <a href="https://adsb.fi/">adsb.fi</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>Open Glider Network (OGN)</h4>
+  <p class="op">Community-Projekt; Betreiber und Sitz nicht veröffentlicht</p>
+  <dl>
+    <dt>Wann</dt><dd>während der In-Flight-Überwachung</dd>
+    <dt>Übermittelt</dt><dd>Startpunkt (auf etwa 100&nbsp;m gerundet) und Umkreis als Filter einer dauerhaften Verbindung zu aprs.glidernet.org – <strong>unverschlüsselt</strong> (siehe <a href="#sicherheit">Abschnitt 15</a>). Zur Anmeldung nutzt die App eine zufällige Kennung. Solange diese Verbindung aufgebaut wird oder nicht besteht, fragt die App zusätzlich einen Bereich um den Startpunkt bei live.glidernet.org ab. Die OGN-Gerätedatenbank (ddb.glidernet.org) lädt sie ohne Ortsdaten herunter.</dd>
+    <dt>Datenschutz</dt><dd>keine Datenschutzerklärung veröffentlicht; <a href="https://www.glidernet.org/">glidernet.org</a></dd>
+  </dl>
+</article>
+<article class="svc">
+  <h4>adsbdb.com</h4>
+  <p class="op">Betreiber und Sitz nicht veröffentlicht</p>
+  <dl>
+    <dt>Wann</dt><dd>wenn Sie ein Luftfahrzeug antippen (Details wie Typ und Route)</dd>
+    <dt>Übermittelt</dt><dd>Kennung des Luftfahrzeugs (ICAO-Adresse, Rufzeichen) – keine Ortsdaten</dd>
+    <dt>Datenschutz</dt><dd>keine Datenschutzerklärung veröffentlicht; <a href="https://www.adsbdb.com/">adsbdb.com</a></dd>
+  </dl>
+</article>
+
+<h2 id="luftfahrzeuge"><span class="n">7</span>Daten über Luftfahrzeuge</h2>
+<p>Im In-Flight-Modus zeigt die App öffentlich ausgesendete Positionsdaten bemannter und unbemannter Luftfahrzeuge (z. B. ADS-B, FLARM, OGN-Tracker), die die Dienste in <a href="#dienste">Abschnitt 6</a> bereitstellen. Diese Daten werden nur auf Ihrem Gerät und nur im Arbeitsspeicher verarbeitet (OGN-Positionen höchstens 30 Minuten) und weder dauerhaft gespeichert noch an den Entwickler übermittelt. Die Datenschutz-Einstellungen der OGN-Gerätedatenbank werden beachtet: Geräte mit Tracking-Sperre zeigt die App nicht an, Kennzeichen nur bei freigegebener Identifizierung.</p>
+<p><strong>Rechtsgrundlage</strong> ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO. Das berechtigte Interesse liegt in der Sicherheit des Luftverkehrs: Drohnenpilotinnen und -piloten werden vor bemanntem Luftverkehr gewarnt.</p>
+
+<h2 id="geraet"><span class="n">8</span>Speicherung auf Ihrem Gerät</h2>
+<p>Auf Ihrem Gerät speichert die App:</p>
+<ul>
+  <li>Ihre Einstellungen, den zuletzt gewählten Ort bzw. Startpunkt und den gewählten Modus,</li>
+  <li>selbst gewählte Warntöne,</li>
+  <li>heruntergeladene Geozonen- und Luftfahrtdaten sowie die OGN-Gerätedatenbank (werden automatisch erneuert).</li>
+</ul>
+<p>Diese Daten sind für den Entwickler nicht zugänglich. Ihre Speicherung ist für die von Ihnen genutzten Funktionen unbedingt erforderlich (§&nbsp;25 Abs.&nbsp;2 Nr.&nbsp;2 TDDDG); die Rechtsgrundlage für die weitere Verarbeitung ergibt sich aus <a href="#funktionsweise">Abschnitt 3</a>. Sie löschen alles, indem Sie die App deinstallieren oder ihre Daten in den Systemeinstellungen löschen. Unter Android ist die App von der Cloud-Sicherung des Systems ausgenommen. Unter iOS können die App-Daten je nach Ihren Einstellungen Teil Ihrer Geräte-Sicherung (z. B. iCloud) sein.</p>
+
+<h2 id="teilen"><span class="n">9</span>Teilen, Links und Telefonnummern</h2>
+<ul>
+  <li><strong>Position teilen:</strong> Die App öffnet das Teilen-Menü Ihres Systems mit Ortsname, Koordinaten und einem Link zu Apple Karten oder Google Maps. Wohin Sie das teilen, entscheiden Sie; dort gelten die Bestimmungen der gewählten App. Wer den Link öffnet, nutzt den Kartendienst von Apple bzw. Google nach deren Datenschutzbestimmungen. Die App selbst verbindet sich dabei nicht mit Apple Karten oder Google Maps.</li>
+  <li><strong>Links</strong> zu anderen Webseiten (z. B. DiPUL, Behörden, Wetterdienste) öffnen sich erst beim Antippen im Browser; dort gelten die Bestimmungen der jeweiligen Seite.</li>
+  <li><strong>Telefonnummern und E-Mail-Adressen</strong> öffnen beim Antippen die Telefon- bzw. E-Mail-App Ihres Geräts. Die App übermittelt dabei nichts.</li>
+</ul>
+
+<h2 id="stores"><span class="n">10</span>Google Play, App Store und Testphase</h2>
+<p>Herunterladen und Aktualisieren der App laufen über <strong>Google Play</strong> (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) bzw. den <strong>App Store</strong> und <strong>TestFlight</strong> (Apple Distribution International Ltd., Hollyhill Industrial Estate, Hollyhill, Cork, Irland). Diese Anbieter verarbeiten dabei Daten, z. B. zu Ihrem Konto und zur Installation, in eigener Verantwortung nach ihren Datenschutzbestimmungen (<a href="https://policies.google.com/privacy?hl=de">Google</a>, <a href="https://www.apple.com/de/legal/privacy/">Apple</a>).</p>
+<p>Der Entwickler erhält über Google und Apple:</p>
+<ul>
+  <li>zusammengefasste Statistiken, z. B. zu Installationen, Gerätetypen und Ländern, ohne Bezug zu einzelnen Personen,</li>
+  <li>Absturz- und Fehlerberichte (z. B. Gerätemodell, Systemversion, technischer Ablauf des Fehlers) – bei Google Play und im App Store nur, wenn Sie in den Einstellungen Ihres Geräts der Weitergabe solcher Daten an Entwickler zugestimmt haben, bei TestFlight nach dessen Bedingungen,</li>
+  <li>in der Testphase die Angaben, die für die Teilnahme nötig sind oder die Sie selbst senden: bei Google Play die E-Mail-Adressen der Google-Konten, die der Entwickler in die Testerliste einträgt; bei TestFlight gegebenenfalls Name und E-Mail-Adresse (bei einer Einladung per E-Mail) sowie Feedback, das Sie über TestFlight senden (Kommentar, Screenshot, Geräteangaben).</li>
+</ul>
+<p><strong>Zweck und Rechtsgrundlage:</strong> Durchführung des Tests (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO) sowie Stabilität und Verbesserung der App (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO; das berechtigte Interesse liegt in einer fehlerfreien App). Testerlisten werden mit dem Ende der Testphase oder auf Ihren Wunsch gelöscht.</p>
+
+<h2 id="kontakt"><span class="n">11</span>Kontakt per E-Mail</h2>
+<p>Wenn Sie dem Entwickler schreiben, werden Ihre E-Mail-Adresse und der Inhalt Ihrer Nachricht verarbeitet, um Ihre Anfrage zu beantworten (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO bzw. lit.&nbsp;f – das berechtigte Interesse liegt in der Beantwortung). Die Nachricht wird gelöscht, sobald die Anfrage erledigt ist und keine gesetzliche Aufbewahrungspflicht entgegensteht.</p>
+
+<h2 id="webseite"><span class="n">12</span>Diese Webseite</h2>
+<p>Diese Seite wird über <strong>GitHub Pages</strong> bereitgestellt (GitHub B.V., Prins Bernhardplein 200, 1097&nbsp;JB Amsterdam, Niederlande, und GitHub, Inc., San Francisco, USA). Beim Aufruf erhält GitHub technisch bedingt Ihre IP-Adresse und speichert sie nach eigenen Angaben zu Sicherheitszwecken. Die Seite setzt keine Cookies, nutzt keine Analyse-Werkzeuge und lädt keine Inhalte von anderen Anbietern. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO; das berechtigte Interesse liegt in einer sicheren und zuverlässigen Bereitstellung dieser Informationen. Datenschutzerklärung von GitHub: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+
+<h2 id="drittlaender"><span class="n">13</span>Übermittlung in Drittländer</h2>
+<p>Einige Anbieter haben ihren Sitz oder ihre Server außerhalb der Europäischen Union und des Europäischen Wirtschaftsraums (EWR):</p>
+<ul>
+  <li><strong>Schweiz</strong> (Open-Meteo, swisstopo) und <strong>Vereinigtes Königreich</strong> (OpenStreetMap Foundation): Für diese Länder hat die EU-Kommission ein angemessenes Datenschutzniveau festgestellt (Art.&nbsp;45 DSGVO).</li>
+  <li><strong>USA – Esri, GitHub und Cloudflare</strong> (Netzwerkdienst für OpenFreeMap und adsb.lol): Diese Unternehmen sind nach dem EU-US Data Privacy Framework zertifiziert; dafür besteht ein Angemessenheitsbeschluss der EU-Kommission (Art.&nbsp;45 DSGVO).</li>
+  <li><strong>USA – NOAA</strong> (Aviation Weather Center, Space Weather Prediction Center): Für US-Behörden gilt kein Angemessenheitsbeschluss. Übermittelt werden nur die IP-Adresse und Flugplatz-Kennungen, keine Koordinaten, und nur, wenn Sie die jeweilige Information abrufen. Die Übermittlung ist dafür erforderlich (Art.&nbsp;49 Abs.&nbsp;1 lit.&nbsp;b DSGVO).</li>
+  <li><strong>Anbieter ohne Angaben zum Sitz</strong> (adsb.fi, adsbdb.com, Open Glider Network): Falls sie außerhalb der EU und des EWR ohne angemessenes Datenschutzniveau sitzen, erfolgt die Übermittlung ebenfalls nach Art.&nbsp;49 Abs.&nbsp;1 lit.&nbsp;b DSGVO, weil sie für die von Ihnen genutzte Warnfunktion erforderlich ist.</li>
+</ul>
+<p>Norwegen und Liechtenstein (MET Norway, neway data AG) gehören zum EWR; dort gilt die DSGVO. In Ländern ohne angemessenes Datenschutzniveau können Behörden möglicherweise auf Daten zugreifen, ohne dass Ihnen dieselben Rechtsbehelfe wie in der EU zustehen.</p>
+
+<h2 id="speicherdauer"><span class="n">14</span>Speicherdauer</h2>
+<ul>
+  <li><strong>Auf Ihrem Gerät:</strong> bis Sie die Daten ändern, die App-Daten löschen oder die App deinstallieren. Positionsdaten von Luftfahrzeugen hält die App nur im Arbeitsspeicher.</li>
+  <li><strong>Beim Entwickler:</strong> keine Daten aus der Nutzung der App. E-Mails bis zur Erledigung der Anfrage, Testerlisten bis zum Ende der Testphase oder bis zu Ihrer Abmeldung. Statistiken und Absturzberichte, solange Google bzw. Apple sie bereitstellen.</li>
+  <li><strong>Bei den Anbietern:</strong> nach deren Angaben (<a href="#dienste">Abschnitt 6</a>) und Datenschutzbestimmungen.</li>
+</ul>
+
+<h2 id="sicherheit"><span class="n">15</span>Datensicherheit</h2>
+<p>Alle Abrufe laufen verschlüsselt über HTTPS – mit einer Ausnahme: Die Verbindung zum Open Glider Network (APRS-Protokoll) ist technisch bedingt <strong>unverschlüsselt</strong>. Dabei werden der auf etwa 100&nbsp;m gerundete Startpunkt und der Umkreis im Klartext über das Internet übertragen. Die App braucht kein Konto und speichert nichts zentral; unter Android ist sie von der Cloud-Sicherung des Systems ausgenommen.</p>
+
+<h2 id="rechte"><span class="n">16</span>Ihre Rechte</h2>
+<p>Sie haben gegenüber dem Verantwortlichen das Recht auf</p>
+<ul class="rights">
+  <li>Auskunft (Art.&nbsp;15 DSGVO)</li>
+  <li>Berichtigung (Art.&nbsp;16 DSGVO)</li>
+  <li>Löschung (Art.&nbsp;17 DSGVO)</li>
+  <li>Einschränkung der Verarbeitung (Art.&nbsp;18 DSGVO)</li>
+  <li>Datenübertragbarkeit (Art.&nbsp;20 DSGVO)</li>
+  <li>Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art.&nbsp;7 Abs.&nbsp;3 DSGVO), z. B. durch Entziehen der Standortfreigabe</li>
+</ul>
+<div class="box objection">
+  <p><strong>Widerspruchsrecht (Art.&nbsp;21 DSGVO):</strong> Soweit Daten auf Grundlage von Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO verarbeitet werden, können Sie dem aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit widersprechen. Die Verarbeitung wird dann beendet, sofern keine zwingenden schutzwürdigen Gründe überwiegen oder sie der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen dient.</p>
+</div>
+<p>Zur Ausübung Ihrer Rechte genügt eine E-Mail an <a href="mailto:gelesen_anschluss.7v&#64;icloud&#46;com">gelesen_anschluss.7v&#64;icloud&#46;com</a>. Da die App Ihre Daten auf Ihrem Gerät verarbeitet, liegen dem Entwickler in der Regel keine Daten über Sie vor – außer z. B. Ihren E-Mails oder Ihren Angaben als Testerin oder Tester. Ihre Rechte gegenüber den Anbietern in <a href="#dienste">Abschnitt 6</a> können Sie direkt bei diesen geltend machen.</p>
+<p><strong>Beschwerderecht:</strong> Sie können sich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art.&nbsp;77 DSGVO), insbesondere an Ihrem Aufenthaltsort, Ihrem Arbeitsplatz oder am Ort des mutmaßlichen Verstoßes. Für den Verantwortlichen zuständig ist das Bayerische Landesamt für Datenschutzaufsicht (BayLDA), Promenade&nbsp;18, 91522 Ansbach, <a href="https://www.lda.bayern.de/de/beschwerde.html">lda.bayern.de</a>.</p>
+
+<h2 id="sonstiges"><span class="n">17</span>Pflicht zur Bereitstellung, Kinder</h2>
+<p>Sie sind weder gesetzlich noch vertraglich verpflichtet, Daten bereitzustellen. Ohne Internetverbindung kann die App keine aktuellen Informationen laden; ohne Standortfreigabe wählen Sie Orte auf der Karte. Eine automatisierte Entscheidungsfindung einschließlich Profiling (Art.&nbsp;22 DSGVO) findet nicht statt.</p>
+<p>Die App richtet sich an Drohnenpilotinnen und -piloten und nicht an Kinder unter 16 Jahren.</p>
+
+<h2 id="aenderungen"><span class="n">18</span>Änderungen</h2>
+<p>Diese Datenschutzerklärung wird angepasst, wenn sich die App, die abgerufenen Dienste oder die Rechtslage ändern. Es gilt die jeweils hier veröffentlichte Fassung; das Datum steht oben.</p>
+
+<footer>
+  Flight Buddy · Datenschutzerklärung · Stand: 31. Oktober 2026
+</footer>
+
+</main>
+</body>
+</html>
