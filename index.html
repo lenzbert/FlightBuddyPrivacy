@@ -101,7 +101,7 @@
   <img src="icon.png" alt="" width="56" height="56">
   <div>
     <h1>Datenschutzerklärung</h1>
-    <p class="sub">für die App Flight Buddy (Android und iOS) · Stand: 5. November 2026</p>
+    <p class="sub">für die App Flight Buddy (Android und iOS) · Stand: 10. November 2026</p>
   </div>
 </header>
 
@@ -157,7 +157,7 @@
 <p>Flight Buddy verarbeitet Ihre Eingaben auf Ihrem Gerät. Die App hat kein Benutzerkonto und keinen Server des Entwicklers. Damit sie Karten, Geozonen, Wetter, Ortsnamen und Luftverkehr anzeigen kann, ruft sie diese Informationen <strong>direkt bei den Anbietern</strong> in <a href="#dienste">Abschnitt 6</a> ab. Bei jedem Abruf erhält der Anbieter technisch bedingt:</p>
 <ul>
   <li>die IP-Adresse Ihres Geräts sowie Datum und Uhrzeit,</li>
-  <li>technische Angaben zur Anfrage, z. B. die Kennung „FlightBuddy“ mit Versionsnummer bzw. die Kennung der Browser-Komponente Ihres Systems und das Betriebssystem,</li>
+  <li>technische Angaben zur Anfrage, z. B. die Kennung „FlightBuddy“ mit Versionsnummer und dem Link zu dieser Datenschutzerklärung als Kontaktangabe (bei Datenabrufen der App) bzw. die Kennung der Browser-Komponente Ihres Systems (z. B. bei Kartenkacheln) und das Betriebssystem,</li>
   <li>den Inhalt der Anfrage – je nach Funktion den Kartenausschnitt, die Koordinaten des gewählten Orts bzw. Startpunkts, einen Umkreis, einen Suchbegriff oder die Kennung eines Luftfahrzeugs.</li>
 </ul>
 <p>Abrufe finden nur statt, wenn Sie die jeweilige Funktion nutzen: beim Anzeigen der Karte, beim Wählen eines Orts, beim Öffnen von Abschnitten, bei der Suche und solange die In-Flight-Überwachung läuft. Beim Start prüft die App außerdem ohne Ortsangaben, ob neue Geozonen- und Luftfahrtdaten vorliegen, und lädt sie gegebenenfalls herunter.</p>
@@ -206,12 +206,12 @@
   </dl>
 </article>
 <article class="svc">
-  <h4>Esri World Imagery</h4>
-  <p class="op">Environmental Systems Research Institute, Inc. (Esri), Redlands, USA</p>
+  <h4>EOX Sentinel-2 cloudless</h4>
+  <p class="op">EOX IT Services GmbH, Österreich</p>
   <dl>
-    <dt>Wann</dt><dd>nur beim Kartenstil „Satellit“</dd>
+    <dt>Wann</dt><dd>nur beim Kartenstil „Satellit“ (Satellitenbild und Beschriftungs-Ebene)</dd>
     <dt>Übermittelt</dt><dd>angezeigter Kartenausschnitt</dd>
-    <dt>Datenschutz</dt><dd><a href="https://www.esri.com/de-de/privacy/privacy-statements/privacy-statement">esri.com – Datenschutzbestimmung</a></dd>
+    <dt>Datenschutz</dt><dd><a href="https://eox.at/">eox.at</a></dd>
   </dl>
 </article>
 <article class="svc">
@@ -335,7 +335,7 @@
   <h4>Nominatim (OpenStreetMap)</h4>
   <p class="op">OpenStreetMap Foundation, Vereinigtes Königreich</p>
   <dl>
-    <dt>Wann</dt><dd>Ortsname und Landkreis zum gewählten Ort; Ortssuche, falls Photon nicht erreichbar ist</dd>
+    <dt>Wann</dt><dd>Ortsname und Landkreis zum gewählten Ort; Ortssuche nur, wenn Sie die Suche mit der Eingabetaste auslösen und Photon nicht erreichbar ist (nicht schon während der Eingabe)</dd>
     <dt>Übermittelt</dt><dd>Koordinaten des gewählten Orts bzw. Suchbegriff</dd>
     <dt>Datenschutz</dt><dd><a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a></dd>
   </dl>
@@ -384,8 +384,8 @@
   <h4>Airport-Data.com</h4>
   <p class="op">Cetus Technology Inc.; Sitz nicht veröffentlicht</p>
   <dl>
-    <dt>Wann</dt><dd>wenn adsbdb.com zu einem angetippten Luftfahrzeug ein Foto nennt – das Vorschaubild lädt Ihr Gerät direkt von airport-data.com</dd>
-    <dt>Übermittelt</dt><dd>Adresse des Bildes, die zum Luftfahrzeug gehört – keine Ortsdaten</dd>
+    <dt>Wann</dt><dd>wenn Sie ein Luftfahrzeug antippen – die App fragt dann selbst bei airport-data.com nach einem Foto samt Fotografen und lädt das Vorschaubild direkt von dort</dd>
+    <dt>Übermittelt</dt><dd>ICAO-Adresse des Luftfahrzeugs bzw. Adresse des Bildes – keine Ortsdaten</dd>
     <dt>Speicherung</dt><dd>nach Angaben des Anbieters IP-Adresse und Zugriffszeit, zur Fehlersuche und zur Auswertung der Nutzung; eine Speicherdauer ist nicht angegeben</dd>
     <dt>Datenschutz</dt><dd><a href="https://www.airport-data.com/privacy.html">airport-data.com/privacy.html</a></dd>
   </dl>
@@ -432,11 +432,11 @@
 <p>Einige Anbieter haben ihren Sitz oder ihre Server außerhalb der Europäischen Union und des Europäischen Wirtschaftsraums (EWR):</p>
 <ul>
   <li><strong>Schweiz</strong> (Open-Meteo, swisstopo) und <strong>Vereinigtes Königreich</strong> (OpenStreetMap Foundation): Für diese Länder hat die EU-Kommission ein angemessenes Datenschutzniveau festgestellt (Art.&nbsp;45 DSGVO).</li>
-  <li><strong>USA – Esri, GitHub und Cloudflare</strong> (Netzwerkdienst für OpenFreeMap und adsb.lol): Diese Unternehmen sind nach dem EU-US Data Privacy Framework zertifiziert; dafür besteht ein Angemessenheitsbeschluss der EU-Kommission (Art.&nbsp;45 DSGVO).</li>
+  <li><strong>USA – GitHub und Cloudflare</strong> (Netzwerkdienst für OpenFreeMap und adsb.lol): Diese Unternehmen sind nach dem EU-US Data Privacy Framework zertifiziert; dafür besteht ein Angemessenheitsbeschluss der EU-Kommission (Art.&nbsp;45 DSGVO).</li>
   <li><strong>USA – NOAA</strong> (Aviation Weather Center, Space Weather Prediction Center): Für US-Behörden gilt kein Angemessenheitsbeschluss. Übermittelt werden nur die IP-Adresse und Flugplatz-Kennungen, keine Koordinaten, und nur, wenn Sie die jeweilige Information abrufen. Die Übermittlung ist dafür erforderlich (Art.&nbsp;49 Abs.&nbsp;1 lit.&nbsp;b DSGVO).</li>
   <li><strong>Anbieter ohne Angaben zum Sitz</strong> (adsb.fi, adsbdb.com, Airport-Data.com, Open Glider Network): Falls sie außerhalb der EU und des EWR ohne angemessenes Datenschutzniveau sitzen, erfolgt die Übermittlung ebenfalls nach Art.&nbsp;49 Abs.&nbsp;1 lit.&nbsp;b DSGVO, weil sie für die von Ihnen genutzte Funktion erforderlich ist – die Warnung vor Luftverkehr bzw. die Details eines angetippten Luftfahrzeugs.</li>
 </ul>
-<p>Norwegen und Liechtenstein (MET Norway, neway data AG) gehören zum EWR; dort gilt die DSGVO. In Ländern ohne angemessenes Datenschutzniveau können Behörden möglicherweise auf Daten zugreifen, ohne dass Ihnen dieselben Rechtsbehelfe wie in der EU zustehen.</p>
+<p>Österreich (EOX), Norwegen und Liechtenstein (MET Norway, neway data AG) gehören zur EU bzw. zum EWR; dort gilt die DSGVO. In Ländern ohne angemessenes Datenschutzniveau können Behörden möglicherweise auf Daten zugreifen, ohne dass Ihnen dieselben Rechtsbehelfe wie in der EU zustehen.</p>
 
 <h2 id="speicherdauer"><span class="n">14</span>Speicherdauer</h2>
 <ul>
@@ -472,7 +472,7 @@
 <p>Diese Datenschutzerklärung wird angepasst, wenn sich die App, die abgerufenen Dienste oder die Rechtslage ändern. Es gilt die jeweils hier veröffentlichte Fassung; das Datum steht oben.</p>
 
 <footer>
-  Flight Buddy · Datenschutzerklärung · Stand: 5. November 2026
+  Flight Buddy · Datenschutzerklärung · Stand: 10. November 2026
 </footer>
 
 </main>
