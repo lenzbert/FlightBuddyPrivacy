@@ -6,90 +6,142 @@
 <title>Datenschutzerklärung – Flight Buddy</title>
 <meta name="description" content="Datenschutzerklärung der App Flight Buddy für Android und iOS: welche Daten die App verarbeitet, an welche Dienste sie übermittelt werden und welche Rechte Sie haben.">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#070b14" media="(prefers-color-scheme: dark)">
-<link rel="icon" type="image/png" href="icon.png">
+<meta name="theme-color" content="#f3ecd9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111923" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="icon.png">
 <style>
+  /* Design „Kartenblatt“ (wie die App): Papierton, Tinte, ein Magenta. Dunkel = „Nachtkarte“. */
   :root {
-    --bg: #f6f8fb;
-    --surface: #ffffff;
-    --fg: #0f172a;
-    --fg-2: #334155;
-    --fg-3: #64748b;
-    --line: #e2e8f0;
-    --accent: #0369a1;
-    --accent-soft: #e0f2fe;
-    --radius: 14px;
+    --bg: #f3ecd9;
+    --surface: #faf5e6;
+    --surface-2: #eee6cf;
+    --fg: #1d2a3a;
+    --fg-2: #3f4a57;
+    --fg-3: #5f6a76;
+    --line: rgba(29, 42, 58, 0.14);
+    --line-strong: rgba(29, 42, 58, 0.3);
+    --accent: #b0196b;
+    --accent-soft: rgba(176, 25, 107, 0.09);
+    --grid: rgba(29, 42, 58, 0.06);
+    --shadow: 0 1px 2px rgba(29, 42, 58, 0.12);
+    --rc: 6px;
+    --rs: 8px;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #070b14;
-      --surface: #0e1524;
-      --fg: #e6edf7;
-      --fg-2: #c3cede;
-      --fg-3: #8d9bb1;
-      --line: #1f2a3d;
-      --accent: #5cc8fa;
-      --accent-soft: rgba(56, 189, 248, 0.12);
+    :root:not([data-theme="light"]) {
+      --bg: #111923;
+      --surface: #18212d;
+      --surface-2: #212c3a;
+      --fg: #efe6cf;
+      --fg-2: #cbc4b0;
+      --fg-3: #9d9988;
+      --line: rgba(239, 230, 207, 0.12);
+      --line-strong: rgba(239, 230, 207, 0.26);
+      --accent: #ee6aa7;
+      --accent-soft: rgba(238, 106, 167, 0.14);
+      --grid: rgba(239, 230, 207, 0.05);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     }
+  }
+  :root[data-theme="dark"] {
+    --bg: #111923;
+    --surface: #18212d;
+    --surface-2: #212c3a;
+    --fg: #efe6cf;
+    --fg-2: #cbc4b0;
+    --fg-3: #9d9988;
+    --line: rgba(239, 230, 207, 0.12);
+    --line-strong: rgba(239, 230, 207, 0.26);
+    --accent: #ee6aa7;
+    --accent-soft: rgba(238, 106, 167, 0.14);
+    --grid: rgba(239, 230, 207, 0.05);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; scroll-padding-top: 16px; }
   body {
     margin: 0;
-    background: var(--bg);
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 32px 32px;
     color: var(--fg-2);
-    font: 16.5px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font: 16px/1.65 var(--sans);
   }
   main { max-width: 780px; margin: 0 auto; padding: 40px 20px 64px; }
-  h1, h2, h3, h4 { color: var(--fg); line-height: 1.3; }
-  h1 { font-size: clamp(26px, 5vw, 32px); margin: 0; letter-spacing: -0.01em; }
-  h2 { font-size: 21px; margin: 48px 0 12px; display: flex; gap: 10px; align-items: baseline; }
-  h2 .n { color: var(--accent); font-variant-numeric: tabular-nums; min-width: 1.6em; }
-  h3 { font-size: 17px; margin: 28px 0 10px; }
-  h4 { font-size: 16px; margin: 0; }
+  h1, h2, h3, h4 { color: var(--fg); line-height: 1.3; font-weight: 400; }
+  h1 { font-family: var(--serif); font-size: clamp(26px, 5vw, 32px); margin: 0; letter-spacing: -0.01em; }
+  h2 { font-family: var(--serif); font-size: 21px; margin: 48px 0 12px; display: flex; gap: 10px; align-items: baseline; }
+  h2 .n { font: 500 14px var(--mono); color: var(--accent); min-width: 2em; }
+  h3 {
+    font: 500 12px/1.4 var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--fg-3);
+    margin: 32px 0 10px;
+  }
+  h4 { font-family: var(--serif); font-size: 17px; margin: 0; }
   p, ul, ol { margin: 0 0 12px; }
   ul, ol { padding-left: 22px; }
   li { margin: 4px 0; }
   a { color: var(--accent); text-underline-offset: 2px; overflow-wrap: anywhere; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
   strong { color: var(--fg); }
+  em { color: var(--fg); }
   header { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; }
-  header img { width: 56px; height: 56px; border-radius: 13px; flex: none; }
-  .sub { margin: 2px 0 0; color: var(--fg-3); font-size: 15px; }
+  header img { width: 56px; height: 56px; border-radius: 12px; flex: none; box-shadow: var(--shadow); }
+  .sub { margin: 4px 0 0; color: var(--fg-3); font: 13px/1.5 var(--mono); }
   .box {
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: var(--radius);
+    border-radius: var(--rs);
     padding: 18px 20px;
     margin: 16px 0;
+    box-shadow: var(--shadow);
   }
   .box > :last-child { margin-bottom: 0; }
   .summary { border-left: 4px solid var(--accent); }
   .summary h2 { margin-top: 0; }
-  .note { background: var(--accent-soft); border-color: transparent; }
   .toc ol { columns: 2 240px; column-gap: 28px; margin: 0; }
   .toc li { break-inside: avoid; }
   .toc a { text-decoration: none; }
   .toc a:hover { text-decoration: underline; }
   .controller { font-style: normal; line-height: 1.7; }
-  .svc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; margin: 10px 0; }
+  .svc {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--rs);
+    padding: 14px 18px;
+    margin: 10px 0;
+    box-shadow: var(--shadow);
+  }
   .svc .op { margin: 2px 0 10px; color: var(--fg-3); font-size: 14.5px; }
   .svc dl { display: grid; grid-template-columns: 112px 1fr; gap: 4px 14px; margin: 0; font-size: 15px; }
-  .svc dt { color: var(--fg-3); }
+  .svc dt { color: var(--fg-3); font: 12.5px/1.9 var(--mono); }
   .svc dd { margin: 0; }
   .rights { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px 20px; padding-left: 22px; }
   .objection { border: 2px solid var(--accent); }
-  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--fg-3); font-size: 14px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line-strong);
+    color: var(--fg-3);
+    font: 12.5px/1.6 var(--mono);
+  }
   @media (max-width: 560px) {
     main { padding: 28px 16px 48px; }
     .svc dl { grid-template-columns: 1fr; gap: 0; }
-    .svc dt { margin-top: 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .svc dt { margin-top: 8px; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; }
     .svc dt:first-child { margin-top: 0; }
   }
   @media print {
-    body { background: #fff; color: #000; font-size: 11pt; }
-    .box, .svc { break-inside: avoid; }
+    body { background: #fff; background-image: none; color: #000; font-size: 11pt; }
+    .box, .svc { break-inside: avoid; box-shadow: none; }
     a { color: #000; }
   }
 </style>
